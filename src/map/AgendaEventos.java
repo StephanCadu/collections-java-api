@@ -3,6 +3,7 @@ package map;
 import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class AgendaEventos {
 
@@ -17,7 +18,7 @@ public class AgendaEventos {
     }
 
     public void exibirAgenda() {
-        System.out.println(eventos);
+        System.out.println(new TreeMap<>(eventos));
     }
 
     public Map.Entry<LocalDate, Evento> obterProximoEvento() {
